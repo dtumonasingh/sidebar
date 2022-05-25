@@ -170,15 +170,21 @@ main {
 
 .sidebar__items--text {
   display: none;
+  width: fit-content;
+  height: 20px;
+  border: none;
 
   padding-left: 15px;
+}
+
+.message-section--text {
+  display: none;
 }
 
 .sidebar__items--text p {
   width: 80px;
   font-size: 13px;
   color: black;
-  font-weight: bold;
 }
 
 svg {
@@ -191,6 +197,7 @@ svg {
   align-items: center;
   justify-content: center;
   align-self: center;
+  width: -webkit-fill-available;
 }
 
 .circle {
@@ -200,6 +207,7 @@ svg {
   display: flex;
   margin-left: 2px;
   margin-right: 2px;
+  
 }
 
 .circle1 {
@@ -221,11 +229,12 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition-property: width left, right, all;
+  align-self: center;
+  transition: width, left, right, 0.3s;
+  transition-property: width, left, right, all;
   transition-duration: 0s, 0s, 0s, 0.5s;
   transition-timing-function: ease, ease, ease, ease;
   transition-delay: 0s, 0s, 0s, 0s;
-  align-self: center;
 }
 
 .message-section--wide {
@@ -251,18 +260,54 @@ svg {
   margin: 10px;
 }
 
+
 .close-button {
   border-radius: 50%;
+  width: fit-content;
   height: inherit;
-  width: inherit;
   display: none;
   background-color: white;
   align-self: flex-end;
+  border: none;
 }
 
 .visible {
   display: block;
-  width: 20px;
-  height: 20px;
-  border: none;
+}
+
+.message-section--item {
+  display: flex;
+  width: fit-content;
+  font-size: 10px;
+  align-items: center;
+}
+
+.sidebar__company-info--logo{
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar__company-info--icon {
+  height: 30px; 
+}
+
+.sidebar--company-info {
+  display: flex;
+  margin-top:20px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+hr{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+.close-button--icon {
+  height: 25px;
+  width: 25px;
+}
+
+.flex-start {
+  justify-content: flex-start;
 }
